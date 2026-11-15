@@ -1,0 +1,159 @@
+{
+  "dataset": "RAVDESS Speech Corpus",
+  "sample_count": 16,
+  "evaluation_scope": "Stratified 16-recording evaluation subset across distinct actors and emotions. Note: RAVDESS contains standardized short read-speech utterances ('Kids are talking by the door' and 'Dogs are sitting by the door'), which results in low error rates compared to spontaneous conversational speech.",
+  "models": {
+    "OpenAI Whisper Base": {
+      "model": "openai/whisper-base",
+      "sample_count": 16,
+      "word_error_rate_wer": 0.0104,
+      "character_error_rate_cer": 0.0089,
+      "match_error_rate_mer": 0.0103,
+      "word_information_lost_wil": 0.0103,
+      "accuracy_word_level": 98.96
+    },
+    "Facebook Wav2Vec 2.0 Base": {
+      "model": "facebook/wav2vec2-base-960h",
+      "sample_count": 16,
+      "word_error_rate_wer": 0.0208,
+      "character_error_rate_cer": 0.0045,
+      "match_error_rate_mer": 0.0208,
+      "word_information_lost_wil": 0.0412,
+      "accuracy_word_level": 97.92
+    }
+  },
+  "model": "openai/whisper-base",
+  "word_error_rate_wer": 0.0104,
+  "character_error_rate_cer": 0.0089,
+  "accuracy_word_level": 98.96,
+  "details": [
+    {
+      "file": "03-01-01-01-01-02-01.wav",
+      "actor": "Actor_01",
+      "emotion": "Neutral",
+      "ground_truth": "Kids are talking by the door",
+      "whisper_transcript": "Kids are talking by the door.",
+      "wav2vec_transcript": "Kids are talking by the door"
+    },
+    {
+      "file": "03-01-01-01-02-01-02.wav",
+      "actor": "Actor_02",
+      "emotion": "Neutral",
+      "ground_truth": "Dogs are sitting by the door",
+      "whisper_transcript": "Dogs are sitting by the door.",
+      "wav2vec_transcript": "Dogs are sitting by the door"
+    },
+    {
+      "file": "03-01-01-01-02-02-03.wav",
+      "actor": "Actor_03",
+      "emotion": "Neutral",
+      "ground_truth": "Dogs are sitting by the door",
+      "whisper_transcript": "Dogs are sitting by the door.",
+      "wav2vec_transcript": "Dogs are sitting by the door"
+    },
+    {
+      "file": "03-01-02-01-01-01-04.wav",
+      "actor": "Actor_04",
+      "emotion": "Calm",
+      "ground_truth": "Kids are talking by the door",
+      "whisper_transcript": "Kids are talking by the door.",
+      "wav2vec_transcript": "Kids are talking by the door"
+    },
+    {
+      "file": "03-01-02-01-01-02-05.wav",
+      "actor": "Actor_05",
+      "emotion": "Calm",
+      "ground_truth": "Kids are talking by the door",
+      "whisper_transcript": "Kids are talking by the door.",
+      "wav2vec_transcript": "Kids are talking by the door"
+    },
+    {
+      "file": "03-01-02-01-02-01-06.wav",
+      "actor": "Actor_06",
+      "emotion": "Calm",
+      "ground_truth": "Dogs are sitting by the door",
+      "whisper_transcript": "Dogs are sitting by the door.",
+      "wav2vec_transcript": "Dogs are sitting by the door"
+    },
+    {
+      "file": "03-01-02-01-02-02-07.wav",
+      "actor": "Actor_07",
+      "emotion": "Calm",
+      "ground_truth": "Dogs are sitting by the door",
+      "whisper_transcript": "Dogs are sitting by the door.",
+      "wav2vec_transcript": "Dogs are sitting by the door"
+    },
+    {
+      "file": "03-01-02-02-01-01-08.wav",
+      "actor": "Actor_08",
+      "emotion": "Calm",
+      "ground_truth": "Kids are talking by the door",
+      "whisper_transcript": "Kids are talking by the door.",
+      "wav2vec_transcript": "Kits are talking by the door"
+    },
+    {
+      "file": "03-01-02-02-01-02-09.wav",
+      "actor": "Actor_09",
+      "emotion": "Calm",
+      "ground_truth": "Kids are talking by the door",
+      "whisper_transcript": "Hmm, kids are talking by the door.",
+      "wav2vec_transcript": "Kads are talking by the door"
+    },
+    {
+      "file": "03-01-02-02-02-01-10.wav",
+      "actor": "Actor_10",
+      "emotion": "Calm",
+      "ground_truth": "Dogs are sitting by the door",
+      "whisper_transcript": "Dogs are sitting by the door.",
+      "wav2vec_transcript": "Dogs are sitting by the door"
+    },
+    {
+      "file": "03-01-02-02-02-02-11.wav",
+      "actor": "Actor_11",
+      "emotion": "Calm",
+      "ground_truth": "Dogs are sitting by the door",
+      "whisper_transcript": "Dogs are sitting by the door.",
+      "wav2vec_transcript": "Dogs are sitting by the door"
+    },
+    {
+      "file": "03-01-03-01-01-01-12.wav",
+      "actor": "Actor_12",
+      "emotion": "Happy",
+      "ground_truth": "Kids are talking by the door",
+      "whisper_transcript": "Kids are talking by the door.",
+      "wav2vec_transcript": "Kids are talking by the door"
+    },
+    {
+      "file": "03-01-03-01-01-02-13.wav",
+      "actor": "Actor_13",
+      "emotion": "Happy",
+      "ground_truth": "Kids are talking by the door",
+      "whisper_transcript": "Kids are talking by the door.",
+      "wav2vec_transcript": "Kids are talking by the door"
+    },
+    {
+      "file": "03-01-03-01-02-01-14.wav",
+      "actor": "Actor_14",
+      "emotion": "Happy",
+      "ground_truth": "Dogs are sitting by the door",
+      "whisper_transcript": "Dogs are sitting by the door!",
+      "wav2vec_transcript": "Dogs are sitting by the door"
+    },
+    {
+      "file": "03-01-03-01-02-02-15.wav",
+      "actor": "Actor_15",
+      "emotion": "Happy",
+      "ground_truth": "Dogs are sitting by the door",
+      "whisper_transcript": "Dogs are sitting by the door.",
+      "wav2vec_transcript": "Dogs are sitting by the door"
+    },
+    {
+      "file": "03-01-03-02-01-01-16.wav",
+      "actor": "Actor_16",
+      "emotion": "Happy",
+      "ground_truth": "Kids are talking by the door",
+      "whisper_transcript": "Kids are talking by the door.",
+      "wav2vec_transcript": "Kids are talking by the door"
+    }
+  ]
+}
